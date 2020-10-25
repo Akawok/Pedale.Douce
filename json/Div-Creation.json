@@ -1,0 +1,7 @@
+[
+    "<div id='connection'><label><b>Nom d'utilisateur</b></label><br><input type='text' placeholder='Entrer votre nom utilisateur' name='login_username'><br><br><label><b>Mot de Passe</b></label><br><input type='password' placeholder='Entrer votre mot de passe' name='login_password'><br><br><input type='button' id='login' value='Connexion' name='Login' class='button'></div>",
+
+    "<div id='inscription'><br><label><b>Nom d'utilisateur</b></label><br><input type='text' placeholder='Entrer votre nom utilisateur' name='create_username'><br><br><label><b>Mot de passe</b></label><br><input type='password' placeholder='Entrer votre mot de passe' name='create_password'><br><br><label><b>Nom</b></label><br><input type='text' placeholder='Entrer votre nom' name='last_name'><br><br><label><b>Prénom</b></label><br><input type='text' placeholder='Entrer votre prénom' name='first_name'><br><br><label><b>Addresse Mail</b></label><br><input type='text' placeholder='Votre addresse mail' name='mail'><br><br><input type='button' id='create' value='Créer' name='Create' class='button'></div>",
+
+    "<div id='map'><div class='alesia'></div><div class='pompei'></div><div class='angkor'></div><div class='ys'></div><div class='atlantide'></div><div class='shangrila'></div><div class='mycenes'></div><div class='yamatai'></div><div class='machupicchu'></div><div class='babylone'></div><div class='userGeolocate'></div></div>"
+]

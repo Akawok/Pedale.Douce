@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    background-color: #000000;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+.logo>img{
+    width: 80%;
+    height: 90%;
+    margin-top: 1%;
+}
+
+#intro{
+    font-size: 25px;
+}
+/* GRID HEADER */
+.head_container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "logo title connect inscription" ". . . . " ". . . . ";
+    max-height: 150px;
+  }
+  
+.logo {
+    grid-area: logo;
+}
+
+.title, .title>h1, .title>h2{
+    grid-area: title;
+}
+
+.title>h1{
+    margin-top: 4%;
+    color: #ef6b83;
+}
+
+.title>h2{
+    margin-left: 18%;
+    font-size : 15px;
+}
+
+.connect{
+    height: 20%;
+    width: 80%;
+    margin-top: 17%;
+    border: solid 2px #ef6b83;
+    border-radius: 50px 50px 50px 50px;
+    grid-area: connect;
+}
+.connect>h3{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.inscription {
+    height: 20%;
+    width: 80%;
+    margin-top: 17%;
+    margin-left: -8%;
+    border: solid 2px #ef6b83;
+    border-radius: 50px 50px 50px 50px;
+    grid-area: inscription;
+}
+
+.inscription>h3{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.welcome{
+    grid-area: connect;
+    margin-top: 10%;
+    margin-left: 15%
+}
+
+.welcome>p{
+    padding-bottom: 3%;
+}
+
+.infos{
+    grid-area: inscription;
+    margin-top: 10%;
+    margin-right: 15%;
+}
+
+.infos>p{
+    padding-bottom: 3%
+}
+
+/* GRID MAIN */
+.main_container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    grid-template-rows: 0.2fr 1.7fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . ." "left center right";
+}
+  
+.left {
+    grid-area: left;
+}
+
+#usrPos{
+    margin-top: 50%;
+}
+
+#dep_booked{
+    margin-top: 50%;
+}
+
+#arr_booked{
+    margin-top: 10%;
+}
+
+#border_booked{
+    border: solid 1px #ef6b83;
+    padding-bottom: 2%;
+}
+
+.center {
+    grid-area: center;
+}
+
+#inscription{
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border: solid #ef6b83 2px;
+    width: 40%;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#connection{
+    margin-top: 9.5%;
+    padding: 2%; 
+    border: solid #ef6b83 2px;
+    width: 35%;
+    border-radius: 40px 40px 40px 40px;
+}
+  
+.right {
+    grid-area: right;
+    margin-top: 25%;
+}
+
+
+/* CREATION DE LA MAP */
+#map{
+    width: 1100px;
+    height: 700px;
+    position: relative;
+    background-image:url(ville.png);
+    background-size: 1100px 700px;
+    border: 2px solid #ef6b83
+}
+
+input[type=button]{
+    cursor: pointer;
+}
+
+/* ALESIA */
+.alesia{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 100px;
+    left: 150px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* POMPEI */
+.pompei{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 100px;
+    left: 500px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* ANGKOR */
+.angkor{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 100px;
+    left: 800px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* YS */
+.ys{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 350px;
+    left: 50px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* ATLANTIDE */
+.atlantide{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 350px;
+    left: 350px;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+/* SHANGRI-LA */
+.shangrila{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 350px;
+    left: 650px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* MYCENES */
+.mycenes{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 350px;
+    left: 950px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* YAMATAI */
+.yamatai{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 600px;
+    left: 150px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* MACHU PICCHU */
+.machupicchu{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 600px;
+    left: 500px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* BABYLONE */
+.babylone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 600px;
+    left: 800px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* USER SUR MAP GEOLOCALISATION */
+.userGeolocate{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ef6b83;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid black; 
+}
+
+/* TABLES SUR MAP */
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #ef6b83;
+}
+
+.dispo {
+    color: green;
+}
+
+.undispo{
+    color: red;
+}
+
+h3{
+    width: 100%;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 3% 5%;
+    border: 1px solid #ef6b83;
+    border-radius: 8px;
+    background: #ef6b83;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#ef6b83));
+    background: -moz-linear-gradient(top, #ff4a4a, #992727);
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    -webkit-box-shadow: #ef6b83 0px 0px 10px 0px;
+    -moz-box-shadow: #ef6b83 0px 0px 10px 0px;
+    box-shadow: #ef6b83 0px 0px 10px 0px;
+    text-shadow: #ef6b83 1px 1px 1px;
+    font: normal normal normal 17px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
+    background: -moz-linear-gradient(top, #ff5959, #ef6b83);
+    background: linear-gradient(to bottom, #ff5959, #ef6b83);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #ef6b83;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#982727));
+    background: -moz-linear-gradient(top, #982727, #982727);
+    background: linear-gradient(to bottom, #982727, #982727);
+}
